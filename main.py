@@ -7,8 +7,8 @@ import os
 load_dotenv()
 
 # Set OpenAI API key
-openai.api_key = "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"
-# key = "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"
+
+
 
 # Initialize Hugging Face sentiment analysis pipeline
 sentiment_pipeline = pipeline("sentiment-analysis")
