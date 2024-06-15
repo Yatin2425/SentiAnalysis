@@ -6,7 +6,6 @@ import os
 # Load environment variables
 load_dotenv()
 
-# Set OpenAI API key
 
 
 
@@ -47,23 +46,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# from transformers import pipeline
-# generator = pipeline("text-generation", model="openai-community/gpt-3.5-turbo")
-# sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
-# def analyze_sentiment(comment):
-#     result = sentiment_analyzer(comment)
-#     print(result)
-#     return result[0]
-# def generate_response(comment, sentiment):
-#     print("here")
-#     prompt = f"Generate a response to the following Instagram comment while maintaining the brand image. The comment is: \"{comment}\". The sentiment of the comment is {sentiment}. Please ensure the response is professional, positive, and aligns with the brand's values."
-    
-#     response = generator(prompt, max_length=100, min_length=20, num_return_sequences=1, do_sample=True, temperature=0.7, top_k=50)
-#     print("running")
-#     return response[0]['generated_text']
-# statement = input("Enter the comment: ")
-# sentiment = analyze_sentiment(statement)
-# response = generate_response(statement, sentiment)
-# print(response)
 
